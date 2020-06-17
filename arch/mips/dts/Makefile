@@ -2,7 +2,8 @@
 
 dtb-$(CONFIG_ARCH_MTMIPS) += \
 	gardena-smart-gateway-mt7688.dtb \
-	linkit-smart-7688.dtb
+	linkit-smart-7688.dtb \
+	ravpower-rp-wd009.dtb
 dtb-$(CONFIG_TARGET_AP121) += ap121.dtb
 dtb-$(CONFIG_TARGET_AP143) += ap143.dtb
 dtb-$(CONFIG_TARGET_AP152) += ap152.dtb

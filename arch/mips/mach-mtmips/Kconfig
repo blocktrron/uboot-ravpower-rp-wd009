@@ -32,6 +32,14 @@ config BOARD_GARDENA_SMART_GATEWAY_MT7688
 	  GARDENA smart Gateway boards have a MT7688 SoC with 128 MiB of RAM
 	  and 8 MiB of flash (SPI NOR) and additional SPI NAND storage.
 
+config BOARD_RAVPOWER_RP_WD009
+	bool "RAVPower RP-WD009"
+	depends on SOC_MT7628
+	select BOARD_LATE_INIT
+	select SUPPORTS_BOOT_RAM
+	help
+	  RAVPower RP-WD009
+
 config BOARD_LINKIT_SMART_7688
 	bool "LinkIt Smart 7688"
 	depends on SOC_MT7628
@@ -133,6 +141,7 @@ config SUPPORTS_BOOT_RAM
 	bool
 
 source "board/gardena/smart-gateway-mt7688/Kconfig"
+source "board/ravpower/rp-wd009/Kconfig"
 source "board/seeed/linkit-smart-7688/Kconfig"
 
 endmenu
